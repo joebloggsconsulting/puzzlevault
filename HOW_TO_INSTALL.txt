@@ -1,0 +1,41 @@
+╔══════════════════════════════════════════════════════╗
+║           PuzzleVault – Install on Android           ║
+╚══════════════════════════════════════════════════════╝
+
+OPTION A: Host on Netlify (Free, 2 minutes)
+───────────────────────────────────────────
+1. Go to https://netlify.com and sign up free
+2. Drag & drop the entire "dist" folder onto the Netlify dashboard
+3. Netlify gives you a URL like: https://your-app.netlify.app
+4. Open that URL in Chrome on your Android phone
+5. Chrome will show a banner: "Add PuzzleVault to Home Screen"
+   - Or tap the ⋮ menu → "Add to Home screen"
+6. Done! It's on your home screen like a real app ✓
+   Works offline. Data stays on your phone.
+
+OPTION B: Host on GitHub Pages (Free)
+──────────────────────────────────────
+1. Create a free GitHub account at github.com
+2. Create a new repository called "puzzlevault"
+3. Upload all files from the "dist" folder
+4. Go to Settings → Pages → Deploy from branch → main
+5. Your URL: https://yourusername.github.io/puzzlevault
+6. Open in Chrome on Android → Add to Home Screen
+
+OPTION C: Local network (no internet hosting needed)
+─────────────────────────────────────────────────────
+If you have Python on your computer:
+1. Open terminal in the "dist" folder
+2. Run: python3 -m http.server 8080
+3. Find your computer's local IP (e.g. 192.168.1.5)
+4. On your phone (same WiFi): open http://192.168.1.5:8080
+5. Add to Home Screen from Chrome menu
+Note: Only works while your computer is on & running the server.
+
+TIPS
+────
+• Always use Chrome on Android for best PWA support
+• After adding to home screen, the app works fully offline
+• All your puzzle data is stored on your phone – private & local
+• To update the app later, just re-host the new dist folder
+
