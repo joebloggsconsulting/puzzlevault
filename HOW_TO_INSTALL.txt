@@ -1,0 +1,43 @@
+╔══════════════════════════════════════════════════════╗
+║           PuzzleVault – Install on Android           ║
+╚══════════════════════════════════════════════════════╝
+
+GITHUB PAGES (this build is configured for this)
+─────────────────────────────────────────────────
+Your repo must be named exactly: puzzlevault
+Your username doesn't matter, but the repo name does.
+
+Step 1: Go to github.com and open your "puzzlevault" repository
+Step 2: Delete any old files that are already there
+Step 3: Upload ALL files from inside this "dist" folder
+         (not the dist folder itself — the files inside it)
+         That means: index.html, sw.js, manifest.webmanifest,
+         registerSW.js, workbox-*.js, favicon.svg,
+         icon-192.png, icon-512.png, and the "assets" folder
+Step 4: Go to Settings → Pages
+         Source: "Deploy from a branch"
+         Branch: main   Folder: / (root)
+         Click Save
+Step 5: Wait ~60 seconds, then visit:
+         https://yourusername.github.io/puzzlevault
+Step 6: Open that URL in Chrome on your Android phone
+Step 7: Tap ⋮ (three dots) → "Add to Home screen"
+         ✅ Done! Works offline. Data stays on your phone.
+
+COMMON ISSUES
+─────────────
+• Blank page → files might be inside a subfolder. Make sure
+  index.html is at the ROOT of the repo, not in a dist/ subfolder.
+• Still blank → go to Settings → Pages and check the URL shown.
+  It must end in /puzzlevault (matching your repo name).
+• 404 error → GitHub Pages takes up to 2 min to go live after
+  enabling. Wait and hard-refresh (Ctrl+Shift+R).
+
+NETLIFY DROP (even easier alternative)
+───────────────────────────────────────
+1. Go to https://netlify.com/drop
+2. Drag this entire "dist" folder onto the page
+3. Get instant URL → open in Chrome on Android → Add to Home Screen
+Note: For Netlify you'd need to rebuild with base: '/' instead of
+'/puzzlevault/' — ask your AI assistant to do a Netlify build.
+
